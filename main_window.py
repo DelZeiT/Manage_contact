@@ -1,8 +1,6 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
 
-# from add_window_py import AddWindow
-
 Form, Window = uic.loadUiType("main_window_ui.ui")
 
 app = QApplication([])
@@ -14,7 +12,13 @@ window.show()
 
 # функция открывания окна для добавления контакта
 def open_add_window():
-    pass
+    Form2, Window2 = uic.loadUiType("add_window_ui.ui")
+    app2 = QApplication([])
+    window2 = Window2()
+    form2 = Form2()
+    form2.setupUi(window2)
+    window2.show()
+    window2.exec_()
 
 
 form.pushButton.clicked.connect(open_add_window)
