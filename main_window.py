@@ -13,7 +13,6 @@ window.show()
 # функция открывания окна для добавления контакта
 def open_add_window():
     Form2, Window2 = uic.loadUiType("add_window_ui.ui")
-    app2 = QApplication([])
     window2 = Window2()
     form2 = Form2()
     form2.setupUi(window2)
