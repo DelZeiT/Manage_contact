@@ -1,5 +1,6 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
+
 # from add_window_py import AddWindow
 
 Form, Window = uic.loadUiType("main_window_ui.ui")
@@ -16,7 +17,15 @@ def open_add_window():
     pass
 
 
-form.pusnButton.clicked.connect(open_add_window)
+form.pushButton.clicked.connect(open_add_window)
+
+
+# функция открывания окна для удаления контакта
+def open_delete_window():
+    pass
+
+
+form.pushButton_2.clicked.connect(open_add_window)
 
 
 app.exec()
