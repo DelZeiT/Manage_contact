@@ -8,6 +8,7 @@ class Info_Contact():
         self.Number = Number
         self.Email = Email
 
+    #функция SQL создания БД
     def sql_query(self):
         # если база уже есть, то она просто откроется, иначе создастся
         connection = sql3.connect('Contacts.db')
@@ -30,6 +31,7 @@ class Info_Contact():
         return self.process_rows(list(rows))
 
 
+    #фунция распаковки списка, и отправки данных
     def process_rows(self, rows_list):
         for row in rows_list:
             id = row[0]
