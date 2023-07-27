@@ -63,7 +63,7 @@
      <x>30</x>
      <y>90</y>
      <width>51</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -126,7 +126,7 @@
     </font>
    </property>
    <property name="text">
-    <string/>
+    <string>Цветков</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
