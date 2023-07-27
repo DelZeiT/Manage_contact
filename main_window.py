@@ -11,7 +11,7 @@ form.setupUi(window)
 window.show()
 
 
-# функция открывания окна для добавления контакта
+# функция открывания окна для добавления контакта.
 def start_add_window():
     open_add_window()
 
