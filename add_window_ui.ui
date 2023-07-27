@@ -126,7 +126,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Цветков</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
