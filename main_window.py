@@ -31,10 +31,18 @@ form.pushButton_3.clicked.connect(add_new_button)
 
 # функция открывания окна для удаления контакта
 def open_delete_window():
-    pass
+    Form3, Window3 = uic.loadUiType("delete_window_ui.ui")
+
+    window3 = Window3()
+    form3 = Form3()
+    form3.setupUi(window3)
+    window3.exec_()
 
 
 form.pushButton_2.clicked.connect(open_delete_window)
+
+
+
 
 window.show()
 app.exec()
