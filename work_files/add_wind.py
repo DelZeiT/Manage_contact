@@ -2,9 +2,11 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import *
 from backend_sql import Info_Contact
 
+
+
 # функция обработки всех кнопок в окне добавления контакта
 def open_add_window():
-    Form2, Window2 = uic.loadUiType("add_window_ui.ui")
+    Form2, Window2 = uic.loadUiType("disign_UI_UI/add_window_ui.ui")
     window2 = Window2()
     form2 = Form2()
     form2.setupUi(window2)
@@ -22,6 +24,7 @@ def open_add_window():
     #кнопка отмены
     def press_cancel():
         window2.close()
+
 
     form2.pushButton.clicked.connect(press_add_contact)
     form2.pushButton_2.clicked.connect(press_cancel)
