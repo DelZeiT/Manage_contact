@@ -25,6 +25,15 @@ def add_new_button():
     list_widget_item.setSizeHint(new_button.sizeHint())
     list_widget.addItem(list_widget_item)
     list_widget.setItemWidget(list_widget_item, new_button)
+    new_button.clicked.connect(open_contact_window)
+
+
+def open_contact_window():
+    Form4, Window4 = uic.loadUiType("contact_window_ui.ui")
+    window4 = Window4()
+    form4 = Form4()
+    form4.setupUi(window4)
+    window4.exec_()
 
 
 form.pushButton_3.clicked.connect(add_new_button)
