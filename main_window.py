@@ -21,6 +21,7 @@ form.pushButton.clicked.connect(open_add_window)
 def add_new_button():
     list_widget = form.listWidget
     new_button = QPushButton("Новая кнопка")
+    new_button.setStyleSheet("background-color: #778899; color: white;")
     list_widget_item = QListWidgetItem()
     list_widget_item.setSizeHint(new_button.sizeHint())
     list_widget.addItem(list_widget_item)
@@ -33,6 +34,16 @@ def open_contact_window():
     window4 = Window4()
     form4 = Form4()
     form4.setupUi(window4)
+
+    def open_window_in_contact():
+        Form5, Window5 = uic.loadUiType("refactor_window_ui.ui")
+        window5 = Window5()
+        form5 = Form5()
+        form5.setupUi(window5)
+        window5.exec_()
+
+    form4.pushButton.clicked.connect(open_window_in_contact)
+
     window4.exec_()
 
 

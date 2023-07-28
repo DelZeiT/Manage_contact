@@ -7,11 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>516</width>
-    <height>208</height>
+    <height>218</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Контакт</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: gray</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -26,6 +29,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
    </property>
    <property name="text">
     <string>Имя:</string>
@@ -45,6 +51,9 @@
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
+   </property>
    <property name="text">
     <string>Фамилия:</string>
    </property>
@@ -62,6 +71,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
    </property>
    <property name="text">
     <string>Номер:</string>
@@ -81,6 +93,9 @@
      <pointsize>12</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
+   </property>
    <property name="text">
     <string>Почта:</string>
    </property>
@@ -93,6 +108,9 @@
      <width>101</width>
      <height>28</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
    </property>
    <property name="text">
     <string>Редактировать</string>
@@ -111,6 +129,9 @@
     <font>
      <pointsize>10</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
    </property>
    <property name="text">
     <string>Описание:</string>
@@ -133,6 +154,9 @@
      <pointsize>11</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_5">
    <property name="enabled">
@@ -150,6 +174,9 @@
     <font>
      <pointsize>14</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
    </property>
    <property name="text">
     <string/>
@@ -175,6 +202,9 @@
      <pointsize>11</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="enabled">
@@ -192,6 +222,9 @@
     <font>
      <pointsize>11</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
    </property>
    <property name="text">
     <string/>
@@ -213,6 +246,9 @@
     <font>
      <pointsize>11</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
    </property>
   </widget>
  </widget>

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Редактировать контакт</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: gray</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -26,6 +29,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
    </property>
    <property name="text">
     <string>Имя:</string>
@@ -48,6 +54,9 @@
      <pointsize>11</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
@@ -55,13 +64,16 @@
      <x>40</x>
      <y>80</y>
      <width>91</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
    </property>
    <property name="text">
     <string>Фамилия:</string>
@@ -84,6 +96,9 @@
      <pointsize>11</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
@@ -98,6 +113,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
    </property>
    <property name="text">
     <string>Номер:</string>
@@ -120,6 +138,9 @@
      <pointsize>11</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -137,6 +158,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
    </property>
    <property name="text">
     <string>Почта:</string>
@@ -159,6 +183,9 @@
      <pointsize>11</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
@@ -173,6 +200,9 @@
     <font>
      <pointsize>10</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-black: gray; color: white</string>
    </property>
    <property name="text">
     <string>Описание:</string>
@@ -195,6 +225,9 @@
      <pointsize>14</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -210,6 +243,9 @@
      <width>101</width>
      <height>28</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #778899; color: white</string>
    </property>
    <property name="text">
     <string>Редактировать</string>
