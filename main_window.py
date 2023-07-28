@@ -1,6 +1,5 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
-from PyQt5.QtCore import Qt
 from add_wind import open_add_window
 
 Form, Window = uic.loadUiType("main_window_ui2.ui")
@@ -23,10 +22,6 @@ form.pushButton.clicked.connect(open_add_window)
 def add_new_button():
     list_widget = form.listWidget
     new_button = QPushButton("Новая кнопка")
-    new_button.setFixedSize(120, 40)
-
-    new_button.setStyleSheet("text-align: left; padding-left: 10px;")
-
     list_widget_item = QListWidgetItem()
     list_widget_item.setSizeHint(new_button.sizeHint())
     list_widget.addItem(list_widget_item)
