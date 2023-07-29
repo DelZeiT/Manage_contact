@@ -55,13 +55,42 @@ class GetDataContact:
         self.column = column
 
     # подключение к БД
-    def get_last_name(self):
+    def get_another_name(self):
         with sql3.connect('Contacts.db') as connection:
             cursor = connection.cursor()
             cursor.execute(f"SELECT {self.column} FROM contact WHERE Number = {self.numb};")
             result = cursor.fetchone()
-            print(result, 'СДЕАААААААЛЛ')
             return result
+
+    def get_Lname(self):
+        with sql3.connect('Contacts.db') as connection:
+            cursor = connection.cursor()
+            cursor.execute(f"SELECT LName FROM contact WHERE Number = {self.numb};")
+            result = cursor.fetchone()
+            return result
+
+    def get_Fname(self):
+        with sql3.connect('Contacts.db') as connection:
+            cursor = connection.cursor()
+            cursor.execute(f"SELECT FName FROM contact WHERE Number = {self.numb};")
+            result = cursor.fetchone()
+            return result
+
+    def get_Number(self):
+        with sql3.connect('Contacts.db') as connection:
+            cursor = connection.cursor()
+            cursor.execute(f"SELECT Number FROM contact WHERE Number = {self.numb};")
+            result = cursor.fetchone()
+            return result
+
+    def get_Email(self):
+        with sql3.connect('Contacts.db') as connection:
+            cursor = connection.cursor()
+            cursor.execute(f"SELECT Email FROM contact WHERE Number = {self.numb};")
+            result = cursor.fetchone()
+            return result
+
+
 
 
 
