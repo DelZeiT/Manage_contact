@@ -1,12 +1,8 @@
-from PyQt5 import uic
-from PyQt5.QtWidgets import *
-import sqlite3 as sql3
-from work_files.contact_wind import open_contact_window
 from backend_sql import *
 from contact_wind import *
 
 
-Form, Window = uic.loadUiType("disign_UI_UI/main_window_ui3.ui")
+Form, Window = uic.loadUiType("main_window_ui3.ui")
 
 app = QApplication([])
 window = Window()
@@ -17,7 +13,7 @@ form.setupUi(window)
 
 # функция обработки всех кнопок в окне добавления контакта
 def open_add_window():
-    Form2, Window2 = uic.loadUiType("disign_UI_UI/add_window_ui.ui")
+    Form2, Window2 = uic.loadUiType("add_window_ui.ui")
     window2 = Window2()
     form2 = Form2()
     form2.setupUi(window2)
@@ -84,7 +80,7 @@ def contact_window():
 
 # функция открывания окна для удаления контакта
 def open_delete_window():
-    Form3, Window3 = uic.loadUiType("disign_UI_UI/delete_window_ui.ui")
+    Form3, Window3 = uic.loadUiType("delete_window_ui.ui")
     window3 = Window3()
     form3 = Form3()
     form3.setupUi(window3)

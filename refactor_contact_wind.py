@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import *
 
 
 def refactor_contact():
-    Form5, Window5 = uic.loadUiType("disign_UI_UI/refactor_window_ui.ui")
+    Form5, Window5 = uic.loadUiType("refactor_window_ui.ui")
     window5 = Window5()
     form5 = Form5()
     form5.setupUi(window5)
