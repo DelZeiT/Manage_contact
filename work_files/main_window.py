@@ -1,8 +1,8 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
-# from work_files.add_wind import open_add_window
+import sqlite3 as sql3
 from work_files.contact_wind import open_contact_window
-from backend_sql import Info_Contact
+from backend_sql import *
 
 
 Form, Window = uic.loadUiType("disign_UI_UI/main_window_ui3.ui")
@@ -33,10 +33,14 @@ def open_add_window():
             QMessageBox.warning(window2, 'Ошибка!', 'Заполните все поля.', QMessageBox.Ok)
             return
 
-        info_contact = Info_Contact(text_LName, text_FName, text_Number, text_Email) # отправка в класс SQL
+        info_contact = InfoContact(text_LName, text_FName, text_Number, text_Email) # отправка в класс SQL
         info_contact.sql_query()
 
-        add_new_button(text_LName, text_FName, text_Number)
+        lname_cl = GetDataContact('LName', text_Number)
+        fname_cl = GetDataContact('FName', text_Number)
+        number_cl = GetDataContact('Number', text_Number)
+        add_new_button(*lname_cl.get_last_name(), *fname_cl.get_last_name(), *number_cl.get_last_name())
+
         window2.close()
 
     #кнопка отмены
@@ -53,9 +57,9 @@ def open_add_window():
 
 
 # функция добавления контакта в лист
-def add_new_button(LName, FName, Number):
+def add_new_button(lname_cl, fname_cl, number_cl):
     list_widget = form.listWidget
-    new_button = QPushButton(f"{LName} {FName}                {Number}")
+    new_button = QPushButton(f"{lname_cl} {fname_cl}         {number_cl}")
     new_button.setStyleSheet("background-color: #778899; color: white;")
     list_widget_item = QListWidgetItem()
     list_widget_item.setSizeHint(new_button.sizeHint())
