@@ -1,7 +1,8 @@
 import sqlite3 as sql3
 
 
-class Info_Contact():
+# класс создания записи данных о контакте
+class InfoContact:
     def __init__(self, LName, FName, Number, Email):
         self.LName = LName
         self.FName = FName
@@ -47,8 +48,20 @@ class Info_Contact():
 
 
 
+# класс для получения определенных данных о клиенте
+class GetDataContact:
+    def __init__(self, column, numb):
+        self.numb = numb
+        self.column = column
 
-
+    # подключение к БД
+    def get_last_name(self):
+        with sql3.connect('Contacts.db') as connection:
+            cursor = connection.cursor()
+            cursor.execute(f"SELECT {self.column} FROM contact WHERE Number = {self.numb};")
+            result = cursor.fetchone()
+            print(result, 'СДЕАААААААЛЛ')
+            return result
 
 
 
