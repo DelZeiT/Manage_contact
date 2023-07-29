@@ -84,7 +84,6 @@ def open_contact_window():
 
     window4.exec_()
 
-
 def info_cont(text_Number, text_LName, text_FName, text_Email):
     Form4, Window4 = uic.loadUiType("contact_window_ui.ui")
     window4 = Window4()
