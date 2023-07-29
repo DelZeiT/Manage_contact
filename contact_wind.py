@@ -6,7 +6,7 @@ from refactor_contact_wind import refactor_contact
 
 # открывает окно контакт
 def open_contact_window():
-    Form4, Window4 = uic.loadUiType("disign_UI_UI/contact_window_ui.ui")
+    Form4, Window4 = uic.loadUiType("contact_window_ui.ui")
     window4 = Window4()
     form4 = Form4()
     form4.setupUi(window4)
